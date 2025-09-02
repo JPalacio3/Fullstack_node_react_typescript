@@ -1,0 +1,29 @@
+# Dependencies
+/node_modules
+.env
+
+# Lock file
+package-lock.json
+
+# Environment variables
+.env
+
+# Compiled output
+/dist
+
+# Log files
+logs
+*.log
+npm-debug.log*
+
+# Test reports
+coverage
+.nyc_output
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
