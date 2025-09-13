@@ -3,6 +3,7 @@ import router from "./router";
 import db from "./config/db";
 import colors from "colors";
 import cors, { CorsOptions } from "cors";
+import morgan from "morgan";
 import swaggerUI from "swagger-ui-express";
 import { swaggerSpec, swaggerUIOptions } from "./config/swagger";
 
@@ -30,10 +31,8 @@ const server = express();
 const corsOption: CorsOptions = {
   origin: function (origin, callback) {
     if (origin === process.env.FRONTEND_URL) {
-      console.log("permitir");
       callback(null, true);
     } else {
-      console.log("denegar");
       callback(new Error("Error de CORS"), false);
     }
   },
@@ -46,6 +45,9 @@ server.use(express.static("src/public"));
 
 // Leer datos del formulario
 server.use(express.json());
+
+// Morgan para ver las peticiones por consola
+server.use(morgan("combined"));
 
 // Importación del router para obtener las peticiones de la API
 server.use("/api/products", router);
