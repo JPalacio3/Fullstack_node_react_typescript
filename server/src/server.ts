@@ -34,7 +34,7 @@ const corsOption: CorsOptions = {
       callback(null, true);
     } else {
       console.log("denegar");
-      callback(new Error("No permitido"), false);
+      callback(new Error("Error de CORS"), false);
     }
   },
 };
