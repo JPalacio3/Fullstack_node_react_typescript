@@ -2,6 +2,7 @@ import express from "express";
 import router from "./router";
 import db from "./config/db";
 import colors from "colors";
+import cors, { CorsOptions } from "cors";
 import swaggerUI from "swagger-ui-express";
 import { swaggerSpec, swaggerUIOptions } from "./config/swagger";
 
@@ -24,6 +25,21 @@ connectDB();
 
 // Instancia del servidor de express
 const server = express();
+
+// Permitir conexiones CORS
+const corsOption: CorsOptions = {
+  origin: function (origin, callback) {
+    if (origin === process.env.FRONTEND_URL) {
+      console.log("permitir");
+      callback(null, true);
+    } else {
+      console.log("denegar");
+      callback(new Error("No permitido"), false);
+    }
+  },
+};
+
+server.use(cors(corsOption));
 
 // Servidor de archivos estaticos
 server.use(express.static("src/public"));
