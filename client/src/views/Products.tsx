@@ -24,10 +24,10 @@ export default function Products() {
         </Link>
       </div>
 
-      <div className="p-2">
+      <div className="p-2 rounded-lg mt-5 shadow-lg bg-white">
         <table className="w-full mt-5 table-auto">
-          <thead className="bg-slate-800 text-white">
-            <tr>
+          <thead className="bg-slate-800 text-white hidden md:table-header-group">
+            <tr className=" ">
               <th className="p-2">Producto</th>
               <th className="p-2">Precio</th>
               <th className="p-2">Disponibilidad</th>
