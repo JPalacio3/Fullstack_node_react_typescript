@@ -5,6 +5,7 @@ Este es un proyecto Fullstack que implementa un sistema CRUD (Crear, Leer, Actua
 ## Vista Previa de la Interfaz
 
 <!-- Aquí puedes agregar una captura de pantalla de la aplicación -->
+
 ![Vista Previa de la Interfaz](URL_DE_LA_IMAGEN_AQUI)
 
 ## Despliegue
@@ -15,33 +16,33 @@ Puedes ver la aplicación en funcionamiento en el siguiente enlace:
 
 ## Funcionalidades Principales
 
--   **Listado de Productos:** Visualiza todos los productos en una tabla.
--   **Creación de Productos:** Añade nuevos productos a través de un formulario.
--   **Edición de Productos:** Modifica la información de productos existentes.
--   **Eliminación de Productos:** Borra productos de la base de datos con confirmación.
--   **Cambio de Disponibilidad:** Activa o desactiva la disponibilidad de un producto con un solo clic y previa confirmación.
--   **Validaciones de Formulario:** Feedback en tiempo real sobre los datos ingresados en los formularios.
+- **Listado de Productos:** Visualiza todos los productos en una tabla.
+- **Creación de Productos:** Añade nuevos productos a través de un formulario.
+- **Edición de Productos:** Modifica la información de productos existentes.
+- **Eliminación de Productos:** Borra productos de la base de datos con confirmación.
+- **Cambio de Disponibilidad:** Activa o desactiva la disponibilidad de un producto con un solo clic y previa confirmación.
+- **Validaciones de Formulario:** Feedback en tiempo real sobre los datos ingresados en los formularios.
 
 ## Infraestructura y Tecnologías Utilizadas
 
 ### Backend
 
--   **Entorno de Ejecución:** Node.js
--   **Framework:** Express.js
--   **Lenguaje:** TypeScript
--   **ORM:** Prisma para la gestión de la base de datos.
--   **Base de Datos:** Preparado para PostgreSQL (configurable en `prisma/schema.prisma`).
--   **Documentación de API:** Swagger para visualizar y probar los endpoints.
--   **Testing:** Jest para pruebas unitarias y de integración.
+- **Entorno de Ejecución:** Node.js
+- **Framework:** Express.js
+- **Lenguaje:** TypeScript
+- **ORM:** Prisma para la gestión de la base de datos.
+- **Base de Datos:** Preparado para PostgreSQL (configurable en `prisma/schema.prisma`).
+- **Documentación de API:** Swagger para visualizar y probar los endpoints.
+- **Testing:** Jest para pruebas unitarias y de integración.
 
 ### Frontend
 
--   **Librería:** React
--   **Lenguaje:** TypeScript
--   **Build Tool:** Vite
--   **Enrutamiento:** React Router
--   **Estilos:** Tailwind CSS para un diseño moderno y responsivo.
--   **Gestión de Estado:** React Hooks y Loaders/Actions de React Router.
+- **Librería:** React
+- **Lenguaje:** TypeScript
+- **Build Tool:** Vite
+- **Enrutamiento:** React Router
+- **Estilos:** Tailwind CSS para un diseño moderno y responsivo.
+- **Gestión de Estado:** React Hooks y Loaders/Actions de React Router.
 
 ## Cómo Empezar
 
@@ -49,9 +50,15 @@ Sigue estos pasos para levantar el proyecto en tu entorno local.
 
 ### Prerrequisitos
 
--   Node.js (v18 o superior)
--   npm / pnpm / yarn
--   Una instancia de base de datos PostgreSQL.
+- Node.js (v18 o superior)
+- npm / pnpm / yarn
+- Una instancia de base de datos PostgreSQL.
+
+## Documentación de la API
+
+Puedes acceder a la documentación de la API en la siguiente ruta:
+
+[http://localhost:4000/api/docs](http://localhost:4000/api/docs)
 
 ### Configuración del Backend
 
@@ -96,9 +103,3 @@ Sigue estos pasos para levantar el proyecto en tu entorno local.
     npm run dev
     ```
     La aplicación estará disponible en `http://localhost:5173`.
-
-## Documentación de la API
-
-Una vez que el servidor backend esté en ejecución, puedes acceder a la documentación de la API generada por Swagger en la siguiente ruta:
-
-[http://localhost:4000/api/docs](http://localhost:4000/api/docs)
