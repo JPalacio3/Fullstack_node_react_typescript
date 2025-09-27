@@ -58,7 +58,7 @@ Sigue estos pasos para levantar el proyecto en tu entorno local.
 
 Puedes acceder a la documentación de la API en la siguiente ruta:
 
-[http://localhost:4000/api/docs](http://localhost:4000/api/docs)
+[Documentación de la API](https://fullstack-node-react-typescript-backend.onrender.com/api-docs/)
 
 ### Configuración del Backend
 
