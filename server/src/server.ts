@@ -35,7 +35,7 @@ const corsOption: CorsOptions = {
     console.log("ORIGEN PERMITIDO:", process.env.FRONTEND_URL);
     // --- FIN DEL CAMBIO PARA DEBUGGING ---
 
-    if (origin === process.env.FRONTEND_URL) {
+    if (origin === process.env.FRONTEND_URL || !origin) {
       callback(null, true);
     } else {
       callback(
