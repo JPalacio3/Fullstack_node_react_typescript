@@ -15,6 +15,11 @@ const option: swaggerJSDoc.Options = {
       version: "1.0.0",
       description: "API DOCS for products",
     },
+    servers: [
+      {
+        url: process.env.BACKEND_URL,
+      },
+    ],
   },
   apis: ["./src/router.ts"],
 };

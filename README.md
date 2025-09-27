@@ -6,13 +6,13 @@ Este es un proyecto Fullstack que implementa un sistema CRUD (Crear, Leer, Actua
 
 <!-- Aquí puedes agregar una captura de pantalla de la aplicación -->
 
-![Vista Previa de la Interfaz](URL_DE_LA_IMAGEN_AQUI)
+![Vista Previa de la Interfaz](/client/public/admin-image.png)
 
 ## Despliegue
 
 Puedes ver la aplicación en funcionamiento en el siguiente enlace:
 
-[Ver la aplicación en vivo](URL_DEL_DEPLOYMENT_AQUI)
+[Ver la aplicación en vivo](https://administradorproductos.vercel.app/)
 
 ## Funcionalidades Principales
 
