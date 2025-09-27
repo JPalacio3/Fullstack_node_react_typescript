@@ -12,7 +12,7 @@ Este es un proyecto Fullstack que implementa un sistema CRUD (Crear, Leer, Actua
 
 Puedes ver la aplicación en funcionamiento en el siguiente enlace:
 
-[Ver la aplicación en vivo](https://administradorproductos.vercel.app/)
+[Ver la aplicación en vivo](https://administradorproductos-6bhewo6ny-jpalacios-projects-3da551c3.vercel.app/)
 
 ## Funcionalidades Principales
 
