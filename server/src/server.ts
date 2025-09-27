@@ -30,10 +30,18 @@ const server = express();
 // Permitir conexiones CORS
 const corsOption: CorsOptions = {
   origin: function (origin, callback) {
+    // --- INICIO DEL CAMBIO PARA DEBUGGING ---
+    console.log("ORIGEN RECIBIDO:", origin);
+    console.log("ORIGEN PERMITIDO:", process.env.FRONTEND_URL);
+    // --- FIN DEL CAMBIO PARA DEBUGGING ---
+
     if (origin === process.env.FRONTEND_URL) {
       callback(null, true);
     } else {
-      callback(new Error("Error de CORS"), false);
+      callback(
+        new Error(`Error de CORS: El origen ${origin} no está permitido.`),
+        false
+      );
     }
   },
 };
